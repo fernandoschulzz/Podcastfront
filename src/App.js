@@ -16,11 +16,12 @@ function App() {
       <BrowserRouter>
       <div>
         <header>
-          <h1>Podcast site</h1>
+        <h1>Podcast site</h1>
+          <Podcasts></Podcasts>
         </header>
         <div>
           <Routes>
-          <Route exact path='/' component={Podcast}></Route>
+          <Route exact path='/' component={Podcasts}></Route>
           <Route exact path='/podcasts' component={Podcasts}></Route>
           </Routes>
         </div>
