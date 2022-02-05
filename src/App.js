@@ -3,6 +3,12 @@ import {ApolloClient, ApolloProvider, InMemoryCache} from '@apollo/client';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Podcasts from './Podcasts/Podcasts';
 import Podcast from './Podcasts/Podcast'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './components/home/home';
+import Navbar from './components/navbar/navbar';
+import style from './App.module.css'
+import { ThemeProvider} from '@mui/material/styles';
+import theme from './components/ui/theme';
 
 
 const client = new ApolloClient ({
@@ -12,22 +18,22 @@ const client = new ApolloClient ({
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <ApolloProvider client={client}>
       <BrowserRouter>
-      <div>
+      <div className={style.header}>
         <header>
-        <h1>Podcast site</h1>
-          <Podcasts></Podcasts>
+        <Navbar></Navbar>
         </header>
         <div>
           <Routes>
-          <Route exact path='/' component={Podcasts}></Route>
-          <Route exact path='/podcasts' component={Podcasts}></Route>
+          <Route path="/" element={<Home />} />
           </Routes>
         </div>
       </div>
       </BrowserRouter>
     </ApolloProvider>
+    </ThemeProvider>
   );
 }
 
