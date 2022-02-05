@@ -25,9 +25,9 @@ export default function TrendingEpisode() {
 
 
     return (
-        <Grid container direction="row" alignItems="center">
+        <Grid container direction="row" alignItems="center" paddingBottom="2rem">
           <Grid item>
-            <Grid container direction="column" spacing="1.5rem">
+            <Grid container direction="column" spacing="1.5rem" marginRight="5rem">
               <Grid item>
                 <Grid container direction="row">
                 <Typography className={style.line} color="red">___</Typography><div>Trending Episode</div>

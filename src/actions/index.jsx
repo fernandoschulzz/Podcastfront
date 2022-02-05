@@ -20,6 +20,7 @@ export function getPodcasts() {
                  date
                  content
                  podcastmeta {
+                  description
                    author
                    categories
                    season
@@ -60,6 +61,7 @@ export function getTrendingEpisode() {
                  date
                  content
                  podcastmeta {
+                   description
                    author
                    categories
                    season
