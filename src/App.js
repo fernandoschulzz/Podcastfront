@@ -1,8 +1,6 @@
 import React from 'react';
 import {ApolloClient, ApolloProvider, InMemoryCache} from '@apollo/client';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import Podcasts from './Podcasts/Podcasts';
-import Podcast from './Podcasts/Podcast'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/home/home';
 import Navbar from './components/navbar/navbar';

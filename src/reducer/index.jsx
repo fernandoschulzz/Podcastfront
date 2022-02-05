@@ -1,7 +1,8 @@
-import {GET_PODCASTS, GET_PODCAST_BY_ID, GET_BLOGS} from '../actions/contants'
+import {GET_PODCASTS, GET_PODCAST_BY_ID, GET_BLOGS, GET_TRENDINGEPISODE} from '../actions/contants'
 
 const initialState = {
-    podcasts: []
+    podcasts: [],
+    trendingEpisode: []
 }
 
 const rootReducer = function(state = initialState, action) {
@@ -11,6 +12,12 @@ const rootReducer = function(state = initialState, action) {
             ...state,
             podcasts: action.payload
         }
+        case GET_TRENDINGEPISODE:
+            return {
+                ...state,
+                trendingEpisode: action.payload
+            }
+        default: return state;
     }
 }
 

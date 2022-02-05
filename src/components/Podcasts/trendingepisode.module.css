@@ -1,0 +1,14 @@
+.images {
+    max-height: 2.5rem;
+    max-width: 10rem;
+    margin-left: 1.5rem;
+}
+.imagecontainer {
+    margin-top: 2rem;
+}
+
+.line {
+    margin-top: -5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}

@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import { makeStyles } from '@mui/styles';
 import style from "./navbar.module.css"
 import logo from '../images/huge.png'
+
+
 const useStyles = makeStyles(theme =>({
   navbar: {
     paddingTop: "2rem",
@@ -27,10 +29,14 @@ const useStyles = makeStyles(theme =>({
   },
   tab: {
     ...theme.typography.tab,
+    color: "black !important"
   },
   button: {
     marginLeft: "10px !important",
     marginRight: "10px !important"
+  },
+  buttontext: {
+    ...theme.typography.tab
   },
   buttoncontainer: {
     marginLeft: 'auto'
@@ -47,7 +53,7 @@ export default function Navbar() {
           elevation={0}>
             <Toolbar disableGutters={true}>
               <img src={logo} alt="company logo" className={classes.logo}></img>
-              <Tabs value={2} className={classes.tabcontainer} inkBarStyle={{background: 'blue'}}>
+              <Tabs value={2} className={classes.tabcontainer}>
                <Tab label={<span className={classes.tab}>Home</span>}/>
               <Tab label={<span className={classes.tab}>About</span>}/>
                 <Tab label={<span className={classes.tab}>Episodes</span>}/>
@@ -55,8 +61,8 @@ export default function Navbar() {
                 <Tab label={<span className={classes.tab}>Contact</span>}/>
               </Tabs>
               <div className={classes.buttoncontainer}>
-              <Button className={classes.button} variant="contained" color="error">Subscribe</Button>
-              <Button className={classes.button} variant="outlined" color="error">{<span className={classes.tab}>Sing-in</span>}</Button>
+              <Button className={classes.button} variant="contained" color="error">{<span className={classes.buttontext}>Subscribe</span>}</Button>
+              <Button className={classes.button} variant="outlined" color="error">{<span className={classes.buttontext}>Sing-in</span>}</Button>
               </div>
             </Toolbar>
           </AppBar>

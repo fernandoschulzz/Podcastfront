@@ -1,6 +1,10 @@
 
 .header {
-  background-color: #b6b2b2;
-  /* background-color: #EEEEEE; */
-  max-height: 50%;
+  /* background-color: #b6b2b2; */
+  background-color: #EEEEEE;
+  max-height: 50rem;
+}
+
+body {
+  background-color: #F6F6F6
 }
