@@ -1,8 +1,9 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 import React from "react";
-import {useState, useEffect} from "react";
+import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux"
 import { getPodcasts } from "../../actions";
+import style from "./podcasts.module.css"
 
 
 export default function Podcasts() {
@@ -26,7 +27,7 @@ export default function Podcasts() {
         <Grid container direction="column">
           <Grid item>
             <Grid container direction="row">
-            <Grid item>
+            <Grid item marginLeft="2rem" marginTop="2rem">
               <Typography variant="h4" paddingBottom="3rem">Latest Podcast Episodes</Typography>
             </Grid>
             <Grid item marginLeft="auto">
@@ -37,10 +38,11 @@ export default function Podcasts() {
 { podcasts&& podcasts.map((ele) =>(
 
 
-          <Grid item marginBottom="2.3rem">
+          <Grid key={ele.node.date} item marginBottom="2.3rem">
             <Grid container direction="row" spacing="2rem">
-              <Grid item>
+              <Grid item marginLeft="3rem">
                 <CardMedia
+                className={style.images}
                 component="img"
                 height="180"
                 image={ele.node.podcastmeta.image}
@@ -60,9 +62,9 @@ export default function Podcasts() {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item alignSelf="center">
-              <Grid container direction="column" spacing="0.5rem">
-                <Grid item>
+              <Grid item alignSelf="center" marginLeft="auto" marginRight="7rem">
+              <Grid container direction="column" spacing="0.5rem" borderLeft="1px solid grey">
+                <Grid item >
                   <Typography># Season</Typography>
                 </Grid>
                 <Grid item>
@@ -84,12 +86,4 @@ export default function Podcasts() {
        </CardContent>
      </Card>
   )
-    // return (
-    //   allPodcasts? allPodcasts.map((ele) => (
-    //     <div key={ele.node.date}>
-    //       <h1>{ele.node.title}</h1>
-    //    </div>
-    //   )):
-    //   <p>Loading...</p>
-    // )
 }

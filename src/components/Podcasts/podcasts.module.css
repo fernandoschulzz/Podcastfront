@@ -1,0 +1,6 @@
+.images {
+    min-width: 12rem;
+    max-width: 12rem;
+    height: 10rem;
+    object-fit: cover;
+}

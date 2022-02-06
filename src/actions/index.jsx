@@ -85,3 +85,40 @@ export function getTrendingEpisode() {
     }
 }
 
+export function getBlogs() {
+  return function(dispatch) {
+      const client = new ApolloClient ({
+          cache: new InMemoryCache({}),
+          link: new HttpLink({
+              uri: 'https://nicasource.local/graphql',
+          })
+          
+        })
+      const query = gql`
+      {
+        blogs {
+          edges {
+            node {
+              title
+              date
+              blogmeta {
+                author
+                text
+                company
+              }
+            }
+          }
+        }
+      }
+      
+       
+      `;
+      
+      client.query({query})
+      .then(res => {
+          return dispatch({
+              type: GET_BLOGS,
+              payload: res.data.blogs.edges})
+      })
+  }
+}

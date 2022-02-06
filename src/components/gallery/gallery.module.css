@@ -1,0 +1,13 @@
+.imageOne {
+    min-width: 17.35rem;
+    max-width: 17.35rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.imageTwo {
+    min-width: 17.35rem;
+    max-width: 17.35rem;
+    height: 20rem;
+    object-fit: cover;
+}

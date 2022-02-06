@@ -2,7 +2,8 @@ import {GET_PODCASTS, GET_PODCAST_BY_ID, GET_BLOGS, GET_TRENDINGEPISODE} from '.
 
 const initialState = {
     podcasts: [],
-    trendingEpisode: []
+    trendingEpisode: [],
+    blogs: []
 }
 
 const rootReducer = function(state = initialState, action) {
@@ -17,6 +18,11 @@ const rootReducer = function(state = initialState, action) {
                 ...state,
                 trendingEpisode: action.payload
             }
+        case GET_BLOGS: 
+        return {
+            ...state,
+            blogs: action.payload
+        }
         default: return state;
     }
 }
