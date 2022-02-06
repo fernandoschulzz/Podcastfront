@@ -58,7 +58,7 @@ export default function Sliderblogs() {
         <Slider {...settings}>
         {blogs.length > 0
           ? blogs.map((ele) => (
-            <div>
+            <div key={ele.node.date}>
               <Blogs ele={ele} />
             </div>
           ))

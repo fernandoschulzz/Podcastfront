@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Gallery from "../gallery/gallery"
 import Form from "../form/form"
+import Footer from "../footer/footer"
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
            <Slider></Slider>
            <Gallery></Gallery>
            <Form></Form>
+           <Footer></Footer>
        </div>
       )
   }
