@@ -7,6 +7,7 @@ import Slider from "../slider/slider"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Gallery from "../gallery/gallery"
+import Form from "../form/form"
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
            <Podcasts></Podcasts>
            <Slider></Slider>
            <Gallery></Gallery>
+           <Form></Form>
        </div>
       )
   }
