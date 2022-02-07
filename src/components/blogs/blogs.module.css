@@ -1,6 +1,7 @@
 .text {
     margin-left: 2rem !important;
     margin-right: 2rem !important;
+    margin-bottom: 1rem;
 }
 
 .button {
@@ -15,4 +16,22 @@
     font-family: Poppins !important;
     font-size: 25px !important;
     font-weight: bold !important;
+}
+.authorname {
+    margin-left: 2rem !important;
+    margin-right: 1rem !important;
+    font-size:1.1rem !important;
+    font-weight: bold !important;
+    color: red !important;
+}
+
+.company {
+    margin-left: 2rem !important;
+    font-size:1rem !important;
+    color: #7e7b7b;
+}
+
+.date {
+    font-size:1rem !important;
+    color: #7e7b7b;
 }

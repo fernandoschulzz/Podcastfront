@@ -28,3 +28,8 @@ button {
 .text {
     font-family: Poppins !important;
 }
+
+.error {
+    text-align: center;
+    color: red;
+}

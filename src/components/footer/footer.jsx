@@ -31,7 +31,7 @@ export default function Footer() {
             <Grid item>
                 <Grid container direction="column" spacing="1rem">
                     <Grid item><img className={classes.logo} src={logo} alt="nicasource"></img></Grid>
-                    <Grid item ><Typography maxWidth="16rem">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</Typography></Grid>
+                    <Grid item ><Typography className={style.subtitle} maxWidth="16rem">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</Typography></Grid>
                     <Grid item>
                         <Grid container direction="row" spacing="1rem">
                             <Grid item><img className={classes.imageicon} src={facebook} alt="facebook"></img></Grid>
@@ -44,25 +44,25 @@ export default function Footer() {
             </Grid>
             <Grid item>
                  <Grid container direction="column" spacing="1.2rem">
-                     <Grid item><Typography>Pages</Typography></Grid>
-                     <Grid item><Typography>About</Typography></Grid>
-                     <Grid item><Typography>Episodes</Typography></Grid>
-                     <Grid item><Typography>Blog</Typography></Grid>
-                     <Grid item><Typography>Contact</Typography></Grid>
+                     <Grid item><Typography className={style.title}>Pages</Typography></Grid>
+                     <Grid item><Typography className={style.subtitle}>About</Typography></Grid>
+                     <Grid item><Typography className={style.subtitle}>Episodes</Typography></Grid>
+                     <Grid item><Typography className={style.subtitle}>Blog</Typography></Grid>
+                     <Grid item><Typography className={style.subtitle}>Contact</Typography></Grid>
                  </Grid>
             </Grid>
             <Grid item>
                 <Grid container direction="column" spacing="1.2rem">
-                    <Grid item><Typography>Recent Episodes</Typography></Grid>
-                    <Grid item><Typography>Episode 1</Typography></Grid>
-                    <Grid item><Typography>Episode 2</Typography></Grid>
-                    <Grid item><Typography>Episode 3</Typography></Grid>
-                    <Grid item><Typography>Episode 4</Typography></Grid>
+                    <Grid item><Typography className={style.title}>Recent Episodes</Typography></Grid>
+                    <Grid item><Typography className={style.subtitle}>Episode 1</Typography></Grid>
+                    <Grid item><Typography className={style.subtitle}>Episode 2</Typography></Grid>
+                    <Grid item><Typography className={style.subtitle}>Episode 3</Typography></Grid>
+                    <Grid item><Typography className={style.subtitle}>Episode 4</Typography></Grid>
                 </Grid>
             </Grid>
             <Grid item>
                  <Grid container direction="column">
-                     <Grid item marginBottom="1.2rem"><Typography>Listen My podcast Also in</Typography></Grid>
+                     <Grid item marginBottom="1.2rem"><Typography className={style.title}>Listen My podcast Also in</Typography></Grid>
                      <Grid item><img src={google} alt="gogle" className={style.images}></img></Grid>
                      <Grid item><img src={apple} alt="apple" className={style.images}></img></Grid>
                      <Grid item><img src={spotify} alt="spotify" className={style.images}></img></Grid>
@@ -70,7 +70,7 @@ export default function Footer() {
             </Grid>
         </Grid>
         </Grid>
-            <Grid item className={style.lastline}><Typography>@2022 NicaSource All Rigths Reserved</Typography></Grid>
+            <Grid item className={style.lastline}><Typography className={style.subtitle}>@2022 NicaSource All Rigths Reserved</Typography></Grid>
         </Grid>
     )
 }

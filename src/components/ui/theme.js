@@ -8,7 +8,8 @@ const ligthgrey = "#F6F6F6"
   palette: {
     common: {
         grey: "#EEEEEE",
-        ligthgrey: "#F6F6F6"
+        ligthgrey: "#F6F6F6",
+        darkgrey: "#7e7b7b"
     },
     primary: {
       main: grey,
@@ -23,7 +24,11 @@ const ligthgrey = "#F6F6F6"
         textTransform: "none",
         fontWeight: 500,
         fontSize: "1rem",
-    }
+    },
+    allVariants: {
+      fontFamily: "Poppins",
+      textTransform: "none",
+    },
 }
 });
 

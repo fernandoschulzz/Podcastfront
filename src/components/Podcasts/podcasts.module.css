@@ -1,6 +1,46 @@
 .images {
-    min-width: 12rem;
-    max-width: 12rem;
-    height: 10rem;
+    min-width: 14rem;
+    max-width: 14rem;
+    height: 12rem;
     object-fit: cover;
 }
+
+.cardcontainer {
+    min-height: 13rem;
+    max-height: 13rem;
+}
+
+.title {
+    font-weight: 800 !important;
+    font-size: 1.8rem !important;
+}
+
+.cardtitle {
+    font-weight: 800 !important;
+    font-size: 1.2rem !important;
+}
+
+.sidetext {
+    color: #7e7b7b;
+    font-weight: 100 !important;
+    font-size: 10px !important;
+}
+
+.textcontainer {
+margin-left: auto !important;
+margin-right: 1rem;
+}
+
+.buttonviewall {
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media only screen and (max-width:1350px) {
+    .textcontainer {
+        height: 342px;
+        width: 100%;
+        margin-left: 3rem;
+    }
+}
+

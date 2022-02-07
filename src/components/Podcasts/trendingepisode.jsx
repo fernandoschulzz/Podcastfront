@@ -13,8 +13,6 @@ export default function TrendingEpisode() {
 
   const dispatch = useDispatch();
   const trendingEpisode = useSelector((state) => state.trendingEpisode)
- 
-  console.log(trendingEpisode)
   
   useEffect(() => {
     dispatch(getTrendingEpisode());
@@ -32,7 +30,7 @@ export default function TrendingEpisode() {
             <Grid container direction="column" spacing="1.5rem" marginRight="5rem">
               <Grid item>
                 <Grid container direction="row">
-                <Typography className={style.line} color="red">___</Typography><div>Trending Episode</div>
+                <span className={style.line}>___</span><div>Trending Episode</div>
                 </Grid>
               </Grid>
               
@@ -45,7 +43,7 @@ export default function TrendingEpisode() {
               </Grid>
               <Grid item>
               <Grid container direction="row">
-                <div>Listen On Also</div><Typography className={style.line} color="red">___</Typography>
+                <div>Listen On Also</div><span className={style.line}>___</span>
                 </Grid>
               </Grid>
               <Grid className={style.imagecontainer} container direction="row">

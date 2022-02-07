@@ -27,9 +27,9 @@ export default function Podcasts() {
           <Grid item>
             <Grid container direction="row">
             <Grid item marginLeft="2rem" marginTop="2rem">
-              <Typography variant="h4" paddingBottom="3rem">Latest Podcast Episodes</Typography>
+              <Typography className={style.title} paddingBottom="3rem">Latest Podcast Episodes</Typography>
             </Grid>
-            <Grid item marginLeft="auto">
+            <Grid item marginLeft="auto" className={style.buttonviewall}>
                 <Button variant="contained" color="error">View All</Button>
             </Grid>
             </Grid>
@@ -39,19 +39,19 @@ export default function Podcasts() {
 
           <Grid key={ele.node.date} item marginBottom="2.3rem">
             <Grid container direction="row" spacing="2rem">
-              <Grid item marginLeft="3rem">
+              <Grid item marginLeft="3rem" className={style.cardcontainer}>
                 <CardMedia
                 className={style.images}
                 component="img"
-                height="180"
+                height="200"
                 image={ele.node.podcastmeta.image}
                 alt="coding">
                 </CardMedia>
               </Grid>
               <Grid item>
-                <Grid container direction="column" spacing="2rem">
+                <Grid container direction="column" spacing="1rem">
                   <Grid item>
-                  <Typography maxWidth="35rem" variant="h6">{ele.node.title}</Typography>
+                  <Typography maxWidth="35rem" className={style.cardtitle}>{ele.node.title}</Typography>
                   </Grid>
                   <Grid item>
                   <Typography maxWidth="35rem">{ele.node.podcastmeta.description}</Typography>
@@ -61,16 +61,16 @@ export default function Podcasts() {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item alignSelf="center" marginLeft="auto" marginRight="7rem">
-              <Grid container direction="column" spacing="0.5rem" borderLeft="1px solid grey">
+              <Grid item alignSelf="center" className={style.textcontainer}>
+              <Grid container direction="column" spacing="0.5rem" borderLeft="1px solid #7e7b7b">
                 <Grid item >
-                  <Typography># Season</Typography>
+                  <Typography className={style.sidetext}># Season {ele.node.podcastmeta.season}</Typography>
                 </Grid>
                 <Grid item>
-                <Typography># Posted on</Typography>
+                <Typography className={style.sidetext}># Posted on {ele.node.date.slice(0,10)}</Typography>
                 </Grid>
                 <Grid item>
-                <Typography># Categories</Typography>
+                <Typography className={style.sidetext}># Categories {ele.node.podcastmeta.categories.join(", ")}</Typography>
                 </Grid>
               </Grid>
               </Grid>

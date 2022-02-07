@@ -10,4 +10,15 @@
     margin-top: 3rem;
     text-align: center;
     padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.subtitle {
+    font-size:1rem !important;
+    color: #7e7b7b;
+}
+
+.title {
+    font-size:1rem !important;
+    font-weight: 600;
 }
