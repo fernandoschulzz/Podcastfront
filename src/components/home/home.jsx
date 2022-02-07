@@ -1,5 +1,4 @@
 import React from "react"
-import Blogs from "../blogs/blogs"
 import Podcasts from "../Podcasts/Podcasts"
 import TrendingEpisode from "../Podcasts/trendingepisode"
 import style from "./home.module.css"

@@ -1,4 +1,4 @@
-import {GET_PODCASTS, GET_PODCAST_BY_ID, GET_BLOGS, GET_TRENDINGEPISODE} from '../actions/contants'
+import {GET_PODCASTS, GET_BLOGS, GET_TRENDINGEPISODE} from '../actions/contants'
 
 const initialState = {
     podcasts: [],

@@ -1,4 +1,4 @@
-import { Button, Card, CardHeader, Grid, Typography } from "@mui/material";
+import { Button, Card, Grid, Typography } from "@mui/material";
 import React from "react";
 import style from "./blogs.module.css"
 

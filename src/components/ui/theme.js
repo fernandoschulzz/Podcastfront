@@ -1,8 +1,7 @@
 import { createTheme } from '@mui/material/styles';
-import { green, purple } from '@mui/material/colors';
+import { green,} from '@mui/material/colors';
 
 const grey = "#EEEEEE";
-const ligthgrey = "#F6F6F6"
 
  const theme = createTheme({
   palette: {

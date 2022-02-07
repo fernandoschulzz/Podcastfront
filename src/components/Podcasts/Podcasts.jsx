@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography} from "@mui/material";
+import { Button, Card, CardContent, CardMedia, Grid, Typography} from "@mui/material";
 import React from "react";
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux"

@@ -1,9 +1,8 @@
 import React from "react";
-import {useState, useEffect} from "react";
+import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux"
-import { getPodcasts, getTrendingEpisode } from "../../actions";
-import { makeStyles } from '@mui/styles';
-import { Grid, Typography, Button} from "@mui/material";
+import {getTrendingEpisode } from "../../actions";
+import { Grid, Typography} from "@mui/material";
 import apple from '../images/apple.png'
 import google from '../images/google.png'
 import spotify from '../images/spotify.png'
@@ -48,13 +47,13 @@ export default function TrendingEpisode() {
               </Grid>
               <Grid className={style.imagecontainer} container direction="row">
                 <Grid item>
-                  <img className={style.images} src={apple}></img>
+                  <img className={style.images} src={apple} alt="apple"></img>
                 </Grid>
                 <Grid item>
-                <img className={style.images} src={google}></img>
+                <img className={style.images} src={google} alt="google"></img>
                 </Grid>
                 <Grid item>
-                <img className={style.images} src={spotify}></img>
+                <img className={style.images} src={spotify} alt="spotify"></img>
                 </Grid>
               </Grid>
             </Grid>

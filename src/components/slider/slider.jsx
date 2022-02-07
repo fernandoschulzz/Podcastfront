@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux"

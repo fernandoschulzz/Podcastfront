@@ -1,6 +1,6 @@
 import {ApolloClient, HttpLink, InMemoryCache} from '@apollo/client';
 import gql from "graphql-tag";
-import {GET_PODCASTS, GET_PODCAST_BY_ID, GET_BLOGS, GET_TRENDINGEPISODE} from './contants'
+import {GET_PODCASTS, GET_BLOGS, GET_TRENDINGEPISODE} from './contants'
 
 export function getPodcasts() {
     return function(dispatch) {
