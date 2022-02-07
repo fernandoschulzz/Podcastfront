@@ -1,4 +1,4 @@
-# FrontEnd with React App
+# FrontEnd Nicasource with React App
 
 This project was bootstrapped with [Create React App]
 
