@@ -1,13 +1,26 @@
+.main {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
 .imageOne {
-    min-width: 17.35rem;
-    max-width: 17.35rem;
+    min-width: 17.80rem;
+    max-width: 17.80rem;
     height: 10rem;
     object-fit: cover;
 }
 
 .imageTwo {
-    min-width: 17.35rem;
-    max-width: 17.35rem;
+    min-width: 17.80rem;
+    max-width: 17.80rem;
     height: 20rem;
     object-fit: cover;
+}
+
+.title {
+    margin-bottom: 2rem !important;
+    font-family: Poppins !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    text-align: center;
 }

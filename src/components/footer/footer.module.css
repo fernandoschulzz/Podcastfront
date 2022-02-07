@@ -1,4 +1,13 @@
 .images {
-    max-height: 2.5rem;
-    max-width: 10rem;
+    max-height: 3rem;
+    max-width: 13rem;
+    margin-bottom: 0.5rem;
+}
+
+.lastline {
+    width: 90%;
+    border-top: 0.5px solid rgb(170, 165, 165);
+    margin-top: 3rem;
+    text-align: center;
+    padding-top: 2rem;
 }

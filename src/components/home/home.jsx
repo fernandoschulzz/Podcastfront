@@ -11,8 +11,7 @@ import Form from "../form/form"
 import Footer from "../footer/footer"
 
 export default function Home() {
-
-    
+ 
       return (
        <div className={style.maincontainer}>
            <TrendingEpisode></TrendingEpisode>

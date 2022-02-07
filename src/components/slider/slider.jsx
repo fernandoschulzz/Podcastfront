@@ -4,11 +4,12 @@ import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux"
 import { getBlogs } from "../../actions";
 import Blogs from "../blogs/blogs";
+import style from "./slider.module.css"
+import { Typography } from "@mui/material";
 
 export default function Sliderblogs() {
     const dispatch = useDispatch();
     const blogs = useSelector((state) => state.blogs)
-    console.log(blogs)
 
     useEffect(()=> {
         dispatch(getBlogs());
@@ -27,20 +28,20 @@ export default function Sliderblogs() {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1400,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 900,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1
           }
         },
         {
@@ -53,8 +54,9 @@ export default function Sliderblogs() {
       ]
     };
     return (
-      <div>
-        <h2> Blog Posts </h2>
+      <div className={style.main}>
+        <Typography className={style.title}> Blog Posts</Typography>
+        <div className={style.slider}>
         <Slider {...settings}>
         {blogs.length > 0
           ? blogs.map((ele) => (
@@ -64,6 +66,7 @@ export default function Sliderblogs() {
           ))
           : null}
         </Slider>
+        </div>
       </div>
     );
   }

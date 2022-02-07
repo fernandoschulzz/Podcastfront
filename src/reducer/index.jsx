@@ -2,7 +2,7 @@ import {GET_PODCASTS, GET_PODCAST_BY_ID, GET_BLOGS, GET_TRENDINGEPISODE} from '.
 
 const initialState = {
     podcasts: [],
-    trendingEpisode: [],
+    trendingEpisode: {},
     blogs: []
 }
 

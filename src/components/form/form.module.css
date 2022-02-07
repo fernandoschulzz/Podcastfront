@@ -1,0 +1,30 @@
+.main {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.title {
+    font-family: Poppins !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: Poppins !important;
+    color: rgb(124, 121, 121);
+    text-align: center;
+}
+
+.label {
+    min-width: 25rem !important;
+}
+
+button {
+    min-height: 55px;
+ 
+}
+
+.text {
+    font-family: Poppins !important;
+}

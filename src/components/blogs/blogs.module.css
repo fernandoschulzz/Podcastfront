@@ -1,4 +1,18 @@
 .text {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+}
+
+.button {
+    margin-left: 2rem !important;
+    position: absolute;
+    bottom: 30px;
+}
+
+.title {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+    font-family: Poppins !important;
+    font-size: 25px !important;
+    font-weight: bold !important;
 }

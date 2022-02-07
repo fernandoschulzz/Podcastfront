@@ -1,0 +1,15 @@
+.title {
+    font-family: Poppins !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    margin-bottom: 3rem !important;
+    text-align: center;
+}
+
+.main {
+    margin-top: 5rem;
+}
+
+.slider {
+    margin: 20px;
+}

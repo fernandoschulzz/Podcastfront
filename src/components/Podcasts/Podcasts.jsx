@@ -11,7 +11,6 @@ export default function Podcasts() {
   const dispatch = useDispatch();
   const allPodcasts = useSelector(state => state.podcasts)
   const podcasts = allPodcasts.slice(3,6)
-  console.log(podcasts)
   
   useEffect(() => {
     dispatch(getPodcasts());
@@ -52,13 +51,13 @@ export default function Podcasts() {
               <Grid item>
                 <Grid container direction="column" spacing="2rem">
                   <Grid item>
-                  <Typography maxWidth="40rem" variant="h5">{ele.node.title}</Typography>
+                  <Typography maxWidth="35rem" variant="h6">{ele.node.title}</Typography>
                   </Grid>
                   <Grid item>
-                  <Typography maxWidth="40rem">{ele.node.podcastmeta.description}</Typography>
+                  <Typography maxWidth="35rem">{ele.node.podcastmeta.description}</Typography>
                   </Grid>
                   <Grid item justifySelf="flex-end">
-                  <Button variant="outlined" color="error">Learn More</Button>
+                  <Button variant="outlined" color="error">Know More</Button>
                   </Grid>
                 </Grid>
               </Grid>

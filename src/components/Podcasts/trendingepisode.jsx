@@ -25,7 +25,9 @@ export default function TrendingEpisode() {
 
 
     return (
-        <Grid container direction="row" alignItems="center" paddingBottom="2rem">
+      <div>
+      {trendingEpisode.node?
+        <Grid container direction="row"  className={style.container}>
           <Grid item>
             <Grid container direction="column" spacing="1.5rem" marginRight="5rem">
               <Grid item>
@@ -33,11 +35,13 @@ export default function TrendingEpisode() {
                 <Typography className={style.line} color="red">___</Typography><div>Trending Episode</div>
                 </Grid>
               </Grid>
+              
               <Grid item>
-              <Typography maxWidth="30rem" variant="h3">Lorem ipsum dolor sit amet</Typography>
+              <Typography maxWidth="30rem" variant="h3">{trendingEpisode.node.title}</Typography>
               </Grid>
+              
               <Grid item>
-              <Typography maxWidth="30rem">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</Typography>
+              <Typography maxWidth="30rem">{trendingEpisode.node.podcastmeta.description}</Typography>
               </Grid>
               <Grid item>
               <Grid container direction="row">
@@ -58,8 +62,10 @@ export default function TrendingEpisode() {
             </Grid>
           </Grid>
           <Grid item justifySelf="flex-end">
-            <img src="https://images.vexels.com/media/users/3/210611/isolated/preview/61be446270cdd0cd3e599a95df8819c7-mujer-hablando-en-podcast-personaje-mujer.png" alt="" />
+            <img className={style.mainImage} src={trendingEpisode.node.podcastmeta.image} alt="trendind-episode" />
           </Grid>
         </Grid>
+        :<p>Loading...</p>}
+        </div>
       )
 }
